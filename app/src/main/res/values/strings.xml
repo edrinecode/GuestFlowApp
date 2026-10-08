@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GuestFlow Check-in</string>
+    <string name="kiosk_welcome_title">Welcome to %1$s</string>
+    <string name="kiosk_welcome_subtitle">Please check in for your spa appointment or wellness visit</string>
+    <string name="phone_input_hint">Enter your phone number</string>
+    <string name="check_in_button">Check In</string>
+    <string name="register_as_new_guest">New Guest? Register here</string>
+    <string name="waiting_for_approval_title">Device Pending Approval</string>
+    <string name="waiting_for_approval_desc">This kiosk is registered and waiting for approval from the spa reception admin dashboard.</string>
+    <string name="device_revoked_title">Kiosk Access Revoked</string>
+    <string name="device_revoked_desc">This device is no longer authorized for check-ins. Please contact the front desk administrator.</string>
+</resources>

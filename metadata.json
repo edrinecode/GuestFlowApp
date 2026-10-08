@@ -1,0 +1,6 @@
+{
+  "name": "GuestFlow Check-in",
+  "description": "Customer-facing spa reception kiosk app for seamless returning client check-in and new guest registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
