@@ -54,6 +54,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -465,7 +466,7 @@ private fun WelcomeKioskCard(
                 )
                 Text(
                     text = "Registration Book",
-                    fontFamily = Playfair,
+                    fontFamily = FontFamily.Serif,
                     fontStyle = FontStyle.Italic,
                     fontWeight = FontWeight.Bold,
                     fontSize = if (isCompact) 36.sp else 44.sp,
