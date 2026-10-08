@@ -38,6 +38,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -124,7 +125,7 @@ fun SuccessScreen(
                         append("Welcome, ")
                         withStyle(
                             style = SpanStyle(
-                                fontFamily = Playfair,
+                                fontFamily = FontFamily.Serif,
                                 fontStyle = FontStyle.Italic,
                                 fontWeight = FontWeight.Bold,
                                 color = GuestFlowOrange
