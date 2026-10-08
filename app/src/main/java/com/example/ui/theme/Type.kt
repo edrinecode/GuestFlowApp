@@ -9,14 +9,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.R
 
-// Google Font: Playfair, including Regular, Medium (500), and true Bold (700) Italic
+// Google Font: Playfair (Standard width, elegant serif), including Regular, true Bold (700), Italic, and Bold Italic (700 Italic)
 val PlayfairFont = FontFamily(
     Font(R.font.playfair, FontWeight.Normal),
     Font(R.font.playfair, FontWeight.Medium),
-    Font(R.font.playfair, FontWeight.SemiBold),
-    Font(R.font.playfair, FontWeight.Bold),
+    Font(R.font.playfair_bold, FontWeight.SemiBold),
+    Font(R.font.playfair_bold, FontWeight.Bold),
+    Font(R.font.playfair_bold, FontWeight.ExtraBold),
     Font(R.font.playfair_italic, FontWeight.Normal, FontStyle.Italic),
     Font(R.font.playfair_italic, FontWeight.Medium, FontStyle.Italic),
+    Font(R.font.playfair_bold_italic, FontWeight.SemiBold, FontStyle.Italic),
     Font(R.font.playfair_bold_italic, FontWeight.Bold, FontStyle.Italic),
     Font(R.font.playfair_bold_italic, FontWeight.ExtraBold, FontStyle.Italic)
 )
@@ -27,12 +29,14 @@ val PlayfairBoldItalic = FontFamily(
     Font(R.font.playfair_bold_italic, FontWeight.Bold, FontStyle.Italic)
 )
 
-// DM Sans: primary typography for headings and body
+// DM Sans: primary typography for headings and body, with dedicated Bold font resource
 val DmSans = FontFamily(
     Font(R.font.dm_sans, FontWeight.Normal),
     Font(R.font.dm_sans, FontWeight.Medium),
-    Font(R.font.dm_sans, FontWeight.SemiBold),
-    Font(R.font.dm_sans, FontWeight.Bold)
+    Font(R.font.dm_sans_bold, FontWeight.SemiBold),
+    Font(R.font.dm_sans_bold, FontWeight.Bold),
+    Font(R.font.dm_sans_bold, FontWeight.ExtraBold),
+    Font(R.font.dm_sans_bold, FontWeight.Black)
 )
 
 // DM Mono: for small labels and interface details

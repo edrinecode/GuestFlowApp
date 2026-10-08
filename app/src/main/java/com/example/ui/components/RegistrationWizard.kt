@@ -324,14 +324,14 @@ private fun StepOneName(
                 singleLine = true,
                 textStyle = TextStyle(
                     fontFamily = DmSans,
-                    fontSize = if (isCompact) 17.sp else 18.sp,
-                    fontWeight = FontWeight.SemiBold,
+                    fontSize = if (isCompact) 16.sp else 17.sp,
+                    fontWeight = FontWeight.Normal,
                     color = GuestFlowInk
                 ),
                 shape = RoundedCornerShape(14.dp),
                 colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = GuestFlowOrange,
-                    unfocusedBorderColor = GuestFlowLineInput,
+                    focusedBorderColor = GuestFlowOrange.copy(alpha = 0.85f),
+                    unfocusedBorderColor = GuestFlowLineInput.copy(alpha = 0.75f),
                     focusedContainerColor = GuestFlowWhite,
                     unfocusedContainerColor = GuestFlowWhite,
                     cursorColor = GuestFlowOrange
@@ -694,14 +694,14 @@ private fun StepThreePhone(
                 singleLine = true,
                 textStyle = TextStyle(
                     fontFamily = DmSans,
-                    fontSize = if (isCompact) 17.sp else 18.sp,
-                    fontWeight = FontWeight.SemiBold,
+                    fontSize = if (isCompact) 16.sp else 17.sp,
+                    fontWeight = FontWeight.Normal,
                     color = GuestFlowInk
                 ),
                 shape = RoundedCornerShape(14.dp),
                 colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = GuestFlowOrange,
-                    unfocusedBorderColor = GuestFlowLineInput,
+                    focusedBorderColor = GuestFlowOrange.copy(alpha = 0.85f),
+                    unfocusedBorderColor = GuestFlowLineInput.copy(alpha = 0.75f),
                     focusedContainerColor = GuestFlowWhite,
                     unfocusedContainerColor = GuestFlowWhite,
                     cursorColor = GuestFlowOrange

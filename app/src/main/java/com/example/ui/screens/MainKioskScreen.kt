@@ -193,6 +193,17 @@ fun MainKioskScreen(
 
                     AnimatedContent(
                         targetState = uiState.currentScreen,
+                        contentKey = { screen ->
+                            when (screen) {
+                                is KioskScreen.Welcome -> "welcome"
+                                is KioskScreen.LookingUp -> "looking_up"
+                                is KioskScreen.RegisterWizard -> "register_${screen.step}"
+                                is KioskScreen.CheckingIn -> "checking_in"
+                                is KioskScreen.Success -> "success"
+                                is KioskScreen.FrontDeskAssist -> "front_desk"
+                                is KioskScreen.Error -> "error"
+                            }
+                        },
                         transitionSpec = {
                             (fadeIn(animationSpec = tween(320, easing = FastOutSlowInEasing)) +
                                 slideInVertically(
@@ -225,8 +236,8 @@ fun MainKioskScreen(
                                 }
                                 is KioskScreen.LookingUp -> {
                                     LoadingKioskCard(
-                                        title = "Looking Up Your Reservation",
-                                        subtitle = "Searching SpaGym client records..."
+                                        title = "Looking Up Your Record",
+                                        subtitle = "Finding your client details to check you in..."
                                     )
                                 }
                                 is KioskScreen.RegisterWizard -> {
@@ -532,14 +543,14 @@ private fun WelcomeKioskCard(
                     singleLine = true,
                     textStyle = TextStyle(
                         fontFamily = DmSans,
-                        fontSize = if (isCompact) 18.sp else 19.sp,
-                        fontWeight = FontWeight.SemiBold,
+                        fontSize = if (isCompact) 17.sp else 18.sp,
+                        fontWeight = FontWeight.Normal,
                         color = GuestFlowInk
                     ),
                     shape = RoundedCornerShape(14.dp),
                     colors = OutlinedTextFieldDefaults.colors(
-                        focusedBorderColor = GuestFlowOrange,
-                        unfocusedBorderColor = GuestFlowLineInput,
+                        focusedBorderColor = GuestFlowOrange.copy(alpha = 0.85f),
+                        unfocusedBorderColor = GuestFlowLineInput.copy(alpha = 0.75f),
                         focusedContainerColor = GuestFlowWhite,
                         unfocusedContainerColor = GuestFlowWhite,
                         cursorColor = GuestFlowOrange
